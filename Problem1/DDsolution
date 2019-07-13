@@ -1,0 +1,16 @@
+import time
+
+def Repeater(string):
+
+    char_list = []
+    repeated_list = []
+
+    for i in string:
+        if i not in char_list:
+            char_list.append(i)
+        else:
+            repeated_list.append(i)
+            return i
+        
+    if len(repeated_list) == 0:
+        return 'None'
